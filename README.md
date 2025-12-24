@@ -3,7 +3,8 @@
 
 
 ### 第5章: 推定
-
+[本文](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/5%E7%AB%A0_R.txt)
+[章末問題](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/5%E7%AB%A0_R.txt)
 
 
 ### 第6章: 二標本問題
