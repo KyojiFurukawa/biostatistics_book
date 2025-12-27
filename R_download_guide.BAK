@@ -33,6 +33,7 @@
 <body>
 <header>
   <h1>R のダウンロードとインストール方法 <span class="badge"></span></h1>
+  <p>このページは、統計解析ソフト <strong>R</strong> をパソコンに入れるための手順を、OS別（Windows / macOS）にまとめたものです。</p>
 </header>
 
 <main>
