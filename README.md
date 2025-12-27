@@ -1,10 +1,10 @@
 # 医学統計学教科書(仮)
 書籍「 医学統計学教科書(仮)) XX出版社」のサンプルRコードとデータをここに配置しています。
 
-[](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_download_guide.html)
-
 
 [Rのダウンロード方法](https://htmlpreview.github.io/?https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_download_guide.html?raw=1)
+
+[Rによる確率計算](https://htmlpreview.github.io/?https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_distribution_functions_guide.html?raw=1)
 
 
 ### 第5章: 推定
