@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>R のダウンロードとインストール方法（Windows / macOS / Linux）</title>
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#1a1a1a; --muted:#555;
+      --card:#f6f7f8; --border:#e4e6e8; --accent:#2c7be5;
+      --codebg:#f1f5ff;
+    }
+    body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      margin:0; background:var(--bg); color:var(--fg); line-height:1.7;}
+    header{padding:28px 18px; border-bottom:1px solid var(--border); background:linear-gradient(0deg,#fff, #f7fbff);}
+    header h1{margin:0 0 6px; font-size:22px;}
+    header p{margin:0; color:var(--muted); font-size:14px;}
+    main{max-width:920px; margin:0 auto; padding:18px;}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin:14px 0;}
+    h2{font-size:18px; margin:6px 0 10px;}
+    h3{font-size:16px; margin:14px 0 8px;}
+    ol, ul{margin:8px 0 8px 22px;}
+    code, pre{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Noto Sans Mono CJK JP", monospace;}
+    pre{background:var(--codebg); border:1px solid var(--border); padding:10px 12px; border-radius:10px; overflow:auto;}
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .note{color:var(--muted); font-size:13px;}
+    .badge{display:inline-block; padding:2px 8px; border-radius:999px; background:#e9f2ff; border:1px solid #cfe3ff; color:#114a9b; font-size:12px; margin-left:6px;}
+    footer{padding:18px; border-top:1px solid var(--border); color:var(--muted); font-size:12px;}
+    .toc a{display:block; padding:4px 0;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>R のダウンロードとインストール方法 <span class="badge">初心者向け</span></h1>
+  <p>このページは、統計解析ソフト <strong>R</strong> をパソコンに入れるための手順を、OS別（Windows / macOS / Linux）にまとめたものです。</p>
+</header>
+
+<main>
+  <div class="card toc">
+    <h2>目次</h2>
+    <a href="#what">1. R とは？</a>
+    <a href="#before">2. インストール前の確認</a>
+    <a href="#download">3. ダウンロード（CRAN から）</a>
+    <a href="#windows">4. Windows の手順</a>
+    <a href="#mac">5. macOS の手順</a>
+    <a href="#linux">6. Linux の手順</a>
+    <a href="#verify">7. インストール確認（動作テスト）</a>
+    <a href="#rstudio">8. （任意）RStudio の導入</a>
+    <a href="#trouble">9. よくあるトラブル</a>
+  </div>
+
+  <div class="card" id="what">
+    <h2>1. R とは？</h2>
+    <p>R は、統計解析やデータ可視化に広く使われている無料のソフトウェア（オープンソース）です。R 本体をインストールすると、コマンドを入力して解析できるようになります。</p>
+    <p class="note">ポイント：R 本体（言語＋実行環境）と、便利な統合開発環境である RStudio（任意）は別物です。</p>
+  </div>
+
+  <div class="card" id="before">
+    <h2>2. インストール前の確認</h2>
+    <ul>
+      <li><strong>管理者権限</strong>（Windows の場合はインストール時に必要になることがあります）</li>
+      <li><strong>空き容量</strong>（数百MB程度。パッケージを多く入れると増えます）</li>
+      <li><strong>古い R の有無</strong>：既に R が入っている場合は、最新版へ更新することをおすすめします</li>
+    </ul>
+  </div>
+
+  <div class="card" id="download">
+    <h2>3. ダウンロード（CRAN から）</h2>
+    <p>R は <strong>CRAN</strong>（Comprehensive R Archive Network）という公式の配布サイトから入手できます。</p>
+    <ol>
+      <li>CRAN のトップへアクセス：<a href="https://cran.r-project.org/" target="_blank" rel="noopener">https://cran.r-project.org/</a></li>
+      <li>使っている OS（Windows / macOS / Linux）を選びます</li>
+      <li>表示される案内に従ってインストーラ（またはパッケージ）を入手します</li>
+    </ol>
+    <p class="note">大学や組織のネットワーク環境によっては、ダウンロードがブロックされることがあります。その場合は別の回線や、学内の情報担当部署に相談してください。</p>
+  </div>
+
+  <div class="card" id="windows">
+    <h2>4. Windows の手順</h2>
+    <ol>
+      <li>CRAN で <strong>Download R for Windows</strong> をクリック</li>
+      <li><strong>base</strong> をクリック</li>
+      <li><strong>Download R x.y.z for Windows</strong>（最新版）をクリックしてインストーラ（.exe）を保存</li>
+      <li>保存した .exe をダブルクリックして起動</li>
+      <li>基本的には「次へ」を押して進めてOK（インストール先は標準のままで問題ありません）</li>
+      <li>完了後、「スタート」メニューから <strong>R</strong> を起動できます</li>
+    </ol>
+    <p class="note">研究用途で多くのパッケージを入れる場合、Windows では後述の RTools が必要になることがあります（トラブルの節を参照）。</p>
+  </div>
+
+  <div class="card" id="mac">
+    <h2>5. macOS の手順</h2>
+    <ol>
+      <li>CRAN で <strong>Download R for macOS</strong> をクリック</li>
+      <li>お使いの macOS バージョンに合った <strong>.pkg</strong>（インストーラ）を選び、ダウンロード</li>
+      <li>.pkg を開き、画面の案内に従ってインストール</li>
+      <li>インストール後、アプリケーションから <strong>R</strong> を起動できます</li>
+    </ol>
+    <p class="note">macOS では、パッケージのコンパイル等で Command Line Tools が必要になる場合があります（トラブルの節を参照）。</p>
+  </div>
+
+  <div class="card" id="linux">
+    <h2>6. Linux の手順</h2>
+    <p>Linux はディストリビューションによって手順が異なります。一般にはパッケージ管理（apt/dnf など）を使います。</p>
+
+    <h3>例：Ubuntu / Debian 系</h3>
+    <pre><code>sudo apt update
+sudo apt install r-base</code></pre>
+
+    <h3>例：Fedora / RHEL 系</h3>
+    <pre><code>sudo dnf install R</code></pre>
+
+    <p class="note">最新の R を使いたい場合は、CRAN の Linux 用案内（お使いのディストリビューションに対応）に従ってリポジトリを追加します。</p>
+  </div>
+
+  <div class="card" id="verify">
+    <h2>7. インストール確認（動作テスト）</h2>
+    <p>R を起動したら、次を入力してバージョンが表示されるか確認します。</p>
+    <pre><code>version</code></pre>
+
+    <p>簡単な計算も試してみましょう。</p>
+    <pre><code>1 + 1
+plot(1:10)</code></pre>
+  </div>
+
+  <div class="card" id="rstudio">
+    <h2>8. （任意）RStudio の導入</h2>
+    <p>R の操作をしやすくするために、多くの人が <strong>RStudio</strong>（統合開発環境）を併用します。</p>
+    <ol>
+      <li>R 本体を先にインストール</li>
+      <li>RStudio（Desktop 版）をダウンロードしてインストール</li>
+      <li>RStudio を起動すると、内部で R を使って解析できます</li>
+    </ol>
+    <p class="note">RStudio は R 本体が無いと動きません（必ず R を先に入れます）。</p>
+  </div>
+
+  <div class="card" id="trouble">
+    <h2>9. よくあるトラブル</h2>
+
+    <h3>Q1. パッケージのインストールでエラーが出る（Windows）</h3>
+    <ul>
+      <li>ソースからのインストールが必要なパッケージでは <strong>RTools</strong> が必要なことがあります。</li>
+      <li>エラー文に「Rtools」や「make」「gcc」などが出ていないか確認してください。</li>
+    </ul>
+
+    <h3>Q2. パッケージのインストールでエラーが出る（macOS）</h3>
+    <ul>
+      <li>「xcode」や「clang」などが出る場合、<strong>Command Line Tools</strong> が必要な可能性があります。</li>
+      <li>ターミナルで以下を実行して案内に従います：</li>
+    </ul>
+    <pre><code>xcode-select --install</code></pre>
+
+    <h3>Q3. ダウンロードページが開けない / 会社・大学のネットワークで落ちる</h3>
+    <ul>
+      <li>別の回線（スマホのテザリング等）で試す</li>
+      <li>組織のプロキシ設定がある場合は、ブラウザや OS の設定を確認</li>
+      <li>情報担当部署へ相談</li>
+    </ul>
+
+    <h3>Q4. 既に古い R が入っている。上書きしてよい？</h3>
+    <ul>
+      <li>基本的には最新版をインストールして問題ありません（共存する場合もあります）。</li>
+      <li>更新後は、追加パッケージの再インストールが必要になることがあります。</li>
+    </ul>
+
+    <p class="note">困ったときは、エラーメッセージ（全文）と OS 情報（Windows/macOS/Linux、バージョン）を添えて相談すると解決が早いです。</p>
+  </div>
+</main>
+
+<footer>
+  <div>最終更新：2025-12-27（このHTMLは配布・学内説明資料として自由に改変して使えます）</div>
+</footer>
+</body>
+</html>
