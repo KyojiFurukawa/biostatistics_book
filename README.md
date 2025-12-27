@@ -4,7 +4,7 @@
 [](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_download_guide.html)
 
 
-[Rのダウンロード方法](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_download_guide.html)
+[Rのダウンロード方法](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_download_guide.html?raw=1)
 
 
 ### 第5章: 推定
