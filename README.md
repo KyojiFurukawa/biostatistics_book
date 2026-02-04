@@ -14,7 +14,7 @@
 ### 第5章: 推定
 本文:　[Rコード](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/Ch5_R.txt), [実行結果](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/Ch5_R_output.txt)
 
-章末問題: [略解](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/章末問題/Ch5_章末問題_略解.txt)
+章末問題: [略解](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/Ch5_Problems_solution.pdf)
 [Rコード](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/Ch5_Problems_R.txt), 
 [実行結果](https://github.com/KyojiFurukawa/biostatistics_book/blob/main/Ch5_Problems_R_output.txt)
 
