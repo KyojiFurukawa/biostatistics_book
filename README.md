@@ -6,6 +6,13 @@
 
 [Rによる確率計算](https://htmlpreview.github.io/?https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_distribution_functions_guide.html?raw=1)
 
+
+### 第1章: 
+
+### 第2章: 
+
+### 第3章: 
+
 ### 第4章: 標本分布
 本文:
 章末問題: 
@@ -54,3 +61,8 @@
 本文:
 章末問題: 
 
+### 第11章:
+
+### 第12章:
+
+### 第13章:
