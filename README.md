@@ -1,5 +1,5 @@
-# 医学統計学教科書(仮)
-書籍「 医学統計学教科書(仮)) XX出版社」のサンプルRコードとデータをここに配置しています。
+# 『医療統計学入門 ―医学・薬学研究のためのエビデンス構築―』のウェブサイト
+書籍「医療統計学入門 ―医学・薬学研究のためのエビデンス構築― 京都廣川書店」のサンプルRコード、データ、問題略解などをここに配置しています。
 
 
 [Rのダウンロード方法](https://htmlpreview.github.io/?https://github.com/KyojiFurukawa/biostatistics_book/blob/main/R_download_guide.html?raw=1)
